@@ -2,7 +2,9 @@
 -------------------------------------------
 
 ### Problem Statement
-
+$$
+E = S
+$$
 
 ### Neural Network
 
