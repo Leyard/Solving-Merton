@@ -31,7 +31,7 @@ def sameple_generator():
     return [asset, debt, rf_rate, asset_vol, maturity, equity, eq_vol]
 
 
-wf = open("dataset_train.txt", "w")
+wf = open("./data/train.csv", "w")
 wf.write(",".join(colnames) + "\n")
 for i in range(10000):
     obs = [i+1] + sameple_generator()
@@ -39,7 +39,7 @@ for i in range(10000):
 wf.close()
 
 
-wf = open("dataset_test.txt", "w")
+wf = open("./data/test.csv", "w")
 wf.write(",".join(colnames) + "\n")
 for i in range(2000):
     obs = [i+1] + sameple_generator()
